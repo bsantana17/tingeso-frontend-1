@@ -1,0 +1,27 @@
+<div class="panel col-md-12">
+    <h1>Agregar estudiante</h1>
+    <div class="col-md-12">
+        <div class="row col-md-8">
+            <h4>Nombre:</h4>
+            <input type="text" ng-model="newStudent.name" required>
+        </div>
+        <div class="row col-md-8">
+            <h4>Rut:</h4>
+            <input type="text" placeholder="Sin puntos ni guión" ng-model="newStudent.rut" required>
+        </div>
+        <div class="row col-md-8">
+            <h4>E-mail:</h4>
+            <input type="text" ng-model="newStudent.email" required>
+        </div>
+        <div class="row col-md-8">
+            <h4>Career:</h4>
+            <input type="text" ng-model="newStudent.career" required>
+        </div>
+        <div class="row col-md-8">
+            <h4>Año ingreso:</h4>
+            <input type="text" ng-model="newStudent.yearIncome" required>
+        </div>
+        <br>
+        <input ng-click="send()" type="button" class="btn btn-primary" value="Agregar">
+    </div>
+</div>
