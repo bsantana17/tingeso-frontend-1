@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.list_student', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+  $routeProvider.when('/list_student', {
+    templateUrl: 'list_student/list_student.html',
+    controller: 'ListStudentCtrl'
   });
 }])
 
-.controller('View1Ctrl', ['$scope','$http', function($scope,$http) {
+.controller('ListStudentCtrl', ['$scope','$http', function($scope,$http) {
 
 	$scope.students = [];
 
